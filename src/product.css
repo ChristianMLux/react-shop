@@ -1,0 +1,69 @@
+.product-entry {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 0.25rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 0.25rem;
+}
+.product-entry > div {
+  min-height: 13rem;
+}
+.product-picture {
+  margin: 0.5rem;
+  width: 90%;
+}
+.product-informations > * {
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.product-title {
+  margin: 0.25rem 0;
+}
+.product-manufacturer {
+  margin: 0;
+}
+.product-description {
+  margin: 2rem 0;
+}
+.price {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.price::after {
+  content: ",- EUR";
+}
+.product-gross-price::after {
+  content: ",- EUR incl. VAT";
+}
+.add-to-cart-btn {
+  width: 100%;
+  padding: 0.5rem;
+}
+.product-buy-information {
+  display: flex;
+  flex-flow: column;
+  margin: 0.5rem;
+}
+.product-gross-price {
+  flex-grow: 1;
+}
+
+button {
+  background: #a3db33;
+  border-radius: 0.25rem;
+  opacity: 0.9;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  outline: 0.5px rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+button:active {
+  outline: 1px solid darkgreen;
+}
+button:active::after {
+  margin-left: 1rem;
+  content: "\2714";
+}
